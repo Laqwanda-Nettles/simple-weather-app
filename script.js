@@ -12,7 +12,7 @@ class Weather {
     document.getElementById("weather").innerHTML = `
         <h2>${this.city}</h2>
         <img src="https:${this.icon}" alt="weather icon"/>
-        <p>Temperature: ${this.temperature}</p>
+        <p>Temperature: ${this.temperature}°F</p>
         <p>Description: ${this.description}</p>
         `;
   }
@@ -39,6 +39,7 @@ document
     if (location) {
       const weather = await getWeatherData(location);
       if (weather) {
+        document.getElementById("weather").style.display = "block";
         weather.display();
       } else {
         document.getElementById("weather").innerHTML =

@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #333;
@@ -14,8 +14,46 @@ form {
   text-align: center;
   margin-bottom: 20px;
 }
+#locationInput {
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px 10px;
+  outline: 0;
+  border: 0;
+}
+#searchBtn {
+  border-radius: 45%;
+  border: 0;
+  padding: 4px;
+  margin: 0 5px 4px 5px;
+  cursor: pointer;
+}
+#searchBtn:hover {
+  box-shadow: 3px 3px 6px turquoise;
+}
 
 #weather {
   text-align: center;
   margin-top: 20px;
+  background: #1c38ed88;
+  background: radial-gradient(at left top, #1c38ed6e, #0ed453a0);
+  height: 250px;
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  border: 2px rgba(245, 245, 245, 0.45) solid;
+  box-shadow: 5px 5px 10px whitesmoke;
+  display: none;
+}
+/*display none keeps the card from displaying on page until an input value is entered. It will be displayed using js - style.display = block*/
+#weather h2 {
+  font-size: 25pxs;
+}
+#weather p {
+  font-size: 20px;
+}
+#weather img {
+  width: 70px;
+  height: 70px;
 }
